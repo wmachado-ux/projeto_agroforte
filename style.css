@@ -1,0 +1,1299 @@
+/* =====================================================
+   AGRO FORTE, FUTURO SUSTENTÁVEL - VERSÃO 2.0
+===================================================== */
+
+:root {
+
+    --primary: #2e7d32;
+    --primary-dark: #1b5e20;
+
+    --secondary: #1565c0;
+    --secondary-dark: #0d47a1;
+
+    --accent: #81c784;
+
+    --background: #f4f8f5;
+    --surface: #ffffff;
+
+    --text: #1f2937;
+    --text-light: #6b7280;
+
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+
+    --shadow-sm: 0 4px 12px rgba(0,0,0,.08);
+    --shadow-md: 0 8px 24px rgba(0,0,0,.12);
+    --shadow-lg: 0 15px 35px rgba(0,0,0,.15);
+
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 30px;
+
+    --transition: .3s ease;
+
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark-mode {
+
+    --background: #0f172a;
+    --surface: #1e293b;
+
+    --text: #f8fafc;
+    --text-light: #cbd5e1;
+
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    overflow-x: hidden;
+
+    transition: var(--transition);
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container {
+
+    width: 92%;
+    max-width: 1300px;
+
+    margin: auto;
+
+}
+
+.section {
+
+    padding: 100px 0;
+
+}
+
+.section-header {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.section-header h2 {
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+
+    margin-bottom: 15px;
+
+    color: var(--primary);
+
+}
+
+.section-header p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    color: var(--text-light);
+
+    font-size: 1.1rem;
+
+}
+
+/* ===========================
+   ACESSIBILIDADE
+=========================== */
+
+.skip-link {
+
+    position: absolute;
+
+    left: -999px;
+
+    top: -999px;
+
+}
+
+.skip-link:focus {
+
+    left: 10px;
+    top: 10px;
+
+    background: var(--secondary);
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: var(--radius-sm);
+
+    z-index: 9999;
+
+}
+
+.accessibility-bar {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 10px 20px;
+
+    background: rgba(255,255,255,.7);
+
+    backdrop-filter: blur(10px);
+
+}
+
+.accessibility-bar button {
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    background: white;
+
+    box-shadow: var(--shadow-sm);
+
+    font-weight: 600;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,.85);
+
+    backdrop-filter: blur(12px);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 6%;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.logo {
+
+    font-size: 1.7rem;
+
+    font-weight: 800;
+
+    color: var(--primary);
+
+}
+
+.logo span {
+
+    color: var(--secondary);
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 25px;
+
+    list-style: none;
+
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.nav-links a:hover {
+
+    color: var(--primary);
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.55)
+        ),
+        url("drones.png");
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            transparent,
+            rgba(0,0,0,.4)
+        );
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    max-width: 900px;
+
+    padding: 20px;
+
+}
+
+.hero-tag {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.2);
+
+    backdrop-filter: blur(10px);
+
+    margin-bottom: 20px;
+
+}
+
+.hero h1 {
+
+    font-size: clamp(2.8rem, 6vw, 5rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+}
+
+.hero p {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 35px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 14px 30px;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+    cursor: pointer;
+
+}
+
+.btn-primary {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+.btn-primary:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.btn-secondary {
+
+    background: white;
+
+    color: var(--primary);
+
+}
+
+.btn-secondary:hover {
+
+    transform: translateY(-4px);
+
+}
+
+/* ===========================
+   MISSÃO
+=========================== */
+
+.mission-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+
+    gap: 25px;
+
+}
+
+.mission-card {
+
+    background: var(--surface);
+
+    border-radius: var(--radius-md);
+
+    padding: 35px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: .3s;
+
+}
+
+.mission-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.mission-card span {
+
+    font-size: 3rem;
+
+    display: block;
+
+    margin-bottom: 15px;
+
+}
+
+.mission-card h3 {
+
+    margin-bottom: 10px;
+
+    color: var(--primary);
+
+}
+
+/* ===========================
+   TIMELINE
+=========================== */
+
+.timeline {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+.timeline-item {
+
+    width: 220px;
+
+    background: var(--surface);
+
+    border-radius: var(--radius-md);
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: .3s;
+
+}
+
+.timeline-item:hover {
+
+    transform: scale(1.05);
+
+}
+
+.timeline-icon {
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+
+}
+/* ===========================
+   LABORATÓRIO AGROTECH
+=========================== */
+
+.laboratorio {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(46,125,50,.08),
+            rgba(21,101,192,.08)
+        );
+
+}
+
+.simulator {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+}
+
+.controls,
+.results {
+
+    background: var(--surface);
+
+    padding: 30px;
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.control-group {
+
+    margin-bottom: 25px;
+
+}
+
+.control-group label {
+
+    display: block;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+
+.control-group input[type="range"] {
+
+    width: 100%;
+
+    cursor: pointer;
+
+}
+
+.results {
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 20px;
+
+}
+
+.result-card {
+
+    background: rgba(46,125,50,.08);
+
+    border-left: 5px solid var(--primary);
+
+    border-radius: var(--radius-sm);
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+.result-card h3 {
+
+    font-size: 1rem;
+
+    margin-bottom: 10px;
+
+}
+
+.result-card span {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: var(--primary);
+
+}
+
+/* ===========================
+   DASHBOARD
+=========================== */
+
+.dashboard {
+
+    background: var(--surface);
+
+}
+
+.charts-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 30px;
+
+}
+
+.chart-card {
+
+    background: var(--surface);
+
+    border-radius: var(--radius-md);
+
+    padding: 30px;
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.chart-card canvas {
+
+    width: 100% !important;
+
+}
+
+/* ===========================
+   TABELA COMPARATIVA
+=========================== */
+
+.comparison-table {
+
+    overflow-x: auto;
+
+}
+
+.comparison-table table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+}
+
+.comparison-table th {
+
+    background: var(--primary);
+
+    color: white;
+
+    padding: 18px;
+
+}
+
+.comparison-table td {
+
+    padding: 18px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+.comparison-table tr:hover {
+
+    background: rgba(46,125,50,.05);
+
+}
+
+/* ===========================
+   SOLUÇÕES
+=========================== */
+
+.solutions-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px,1fr));
+
+    gap: 25px;
+
+}
+
+.solution-card {
+
+    background: var(--surface);
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: .3s;
+
+}
+
+.solution-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.solution-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.solution-card h3 {
+
+    padding: 20px 20px 10px;
+
+    color: var(--primary);
+
+}
+
+.solution-card p {
+
+    padding: 0 20px 25px;
+
+}
+
+/* ===========================
+   MAPA INTERATIVO
+=========================== */
+
+.map-container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.map-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+.region-btn {
+
+    border: none;
+
+    background: var(--primary);
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    font-weight: 600;
+
+}
+
+.region-btn:hover {
+
+    background: var(--primary-dark);
+
+    transform: translateY(-3px);
+
+}
+
+.region-info {
+
+    background: var(--surface);
+
+    padding: 35px;
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    text-align: center;
+
+}
+
+/* ===========================
+   QUIZ
+=========================== */
+
+.quiz-container {
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    gap: 30px;
+
+}
+
+#quizBox {
+
+    background: var(--surface);
+
+    padding: 40px;
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+#question {
+
+    margin-bottom: 30px;
+
+    color: var(--primary);
+
+}
+
+.answers {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+.answer-btn {
+
+    padding: 15px;
+
+    border: 2px solid #e5e7eb;
+
+    border-radius: var(--radius-sm);
+
+    background: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    text-align: left;
+
+}
+
+.answer-btn:hover {
+
+    border-color: var(--primary);
+
+}
+
+.answer-btn.correct {
+
+    background: #dcfce7;
+
+    border-color: var(--success);
+
+}
+
+.answer-btn.wrong {
+
+    background: #fee2e2;
+
+    border-color: var(--danger);
+
+}
+
+.quiz-score {
+
+    background: var(--surface);
+
+    border-radius: var(--radius-md);
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-md);
+
+}
+
+#score {
+
+    font-size: 4rem;
+
+    font-weight: 800;
+
+    color: var(--primary);
+
+}
+
+/* ===========================
+   CONQUISTAS
+=========================== */
+
+.achievements-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 25px;
+
+}
+
+.achievement-card {
+
+    background: var(--surface);
+
+    border-radius: var(--radius-md);
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+    opacity: .45;
+
+    transition: .4s;
+
+    font-size: 2rem;
+
+}
+
+.achievement-card.unlocked {
+
+    opacity: 1;
+
+    transform: scale(1.05);
+
+    border: 3px solid gold;
+
+    box-shadow:
+        0 0 20px rgba(255,215,0,.5);
+
+}
+
+/* ===========================
+   DESAFIO FINAL
+=========================== */
+
+.challenge-box {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    background: var(--surface);
+
+    padding: 40px;
+
+    border-radius: var(--radius-lg);
+
+    text-align: center;
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.challenge-box ul {
+
+    list-style: none;
+
+    margin: 25px 0;
+
+}
+
+.challenge-box li {
+
+    margin-bottom: 12px;
+
+    font-size: 1.1rem;
+
+}
+
+#challengeResult {
+
+    margin-top: 25px;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+}
+
+/* ===========================
+   CERTIFICADO
+=========================== */
+
+.certificate-card {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    background: var(--surface);
+
+    padding: 50px;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.certificate-card input {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin: 25px 0;
+
+    border-radius: 10px;
+
+    border: 1px solid #d1d5db;
+
+    font-size: 1rem;
+
+}
+
+/* ===========================
+   REFLEXÃO FINAL
+=========================== */
+
+.reflection-section {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary-dark)
+        );
+
+    color: white;
+
+}
+
+.reflection-content {
+
+    text-align: center;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.reflection-content h2 {
+
+    font-size: clamp(2rem,4vw,4rem);
+
+    margin-bottom: 20px;
+
+}
+
+.reflection-content p {
+
+    font-size: 1.15rem;
+
+    margin-bottom: 35px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+
+    background: #0f172a;
+
+    color: white;
+
+    padding-top: 70px;
+
+}
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 40px;
+
+}
+
+.footer-grid h3 {
+
+    margin-bottom: 15px;
+
+    color: var(--accent);
+
+}
+
+.footer-grid ul {
+
+    list-style: none;
+
+}
+
+.footer-grid li {
+
+    margin-bottom: 10px;
+
+}
+
+.footer-bottom {
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+}
+
+/* ===========================
+   ANIMAÇÕES
+=========================== */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+}
+
+.reveal.active {
+
+    animation: fadeUp .8s ease forwards;
+
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+@media (max-width: 992px) {
+
+    .simulator,
+    .quiz-container,
+    .charts-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+    .results {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .section {
+
+        padding: 70px 0;
+
+    }
+
+    .hero h1 {
+
+        font-size: 2.8rem;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .btn {
+
+        width: 100%;
+
+    }
+
+    .accessibility-bar {
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+}

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável | Plataforma Educacional Interativa</title>
+
+    <meta name="description"
+        content="Plataforma educacional interativa voltada para Agricultura 4.0, sustentabilidade e inovação.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- ACESSIBILIDADE -->
+    <!-- ========================= -->
+
+    <a href="#conteudo-principal" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
+
+    <div class="accessibility-bar">
+
+        <button id="increaseFont">
+            A+
+        </button>
+
+        <button id="decreaseFont">
+            A-
+        </button>
+
+        <button id="contrastBtn">
+            Alto Contraste
+        </button>
+
+        <button id="darkModeBtn">
+            🌙
+        </button>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            🌱 Agro<span>Futuro</span>
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#missao">Missão</a>
+                </li>
+
+                <li>
+                    <a href="#timeline">Evolução</a>
+                </li>
+
+                <li>
+                    <a href="#laboratorio">Laboratório</a>
+                </li>
+
+                <li>
+                    <a href="#comparador">Comparador</a>
+                </li>
+
+                <li>
+                    <a href="#quiz">Quiz</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                Agricultura Sustentável • Agricultura 4.0
+            </span>
+
+            <h1>
+                Produzir mais,
+                preservar mais
+                e construir o futuro.
+            </h1>
+
+            <p>
+
+                Descubra como a tecnologia,
+                a sustentabilidade e a inovação
+                estão transformando o campo
+                e garantindo alimentos para o mundo.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#missao" class="btn btn-primary">
+                    Começar Jornada
+                </a>
+
+                <a href="#laboratorio" class="btn btn-secondary">
+                    Explorar Simulador
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <main id="conteudo-principal">
+
+        <!-- ========================= -->
+        <!-- MISSÃO -->
+        <!-- ========================= -->
+
+        <section id="missao" class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>
+                        Sua Missão
+                    </h2>
+
+                    <p>
+                        Você será responsável por uma fazenda do futuro.
+                        Tome decisões inteligentes para produzir alimentos
+                        preservando o meio ambiente.
+                    </p>
+
+                </div>
+
+                <div class="mission-grid">
+
+                    <article class="mission-card">
+                        <span>🌾</span>
+                        <h3>Produzir Alimentos</h3>
+                        <p>Garantir alimentos para uma população crescente.</p>
+                    </article>
+
+                    <article class="mission-card">
+                        <span>💧</span>
+                        <h3>Economizar Água</h3>
+                        <p>Usar recursos naturais de forma responsável.</p>
+                    </article>
+
+                    <article class="mission-card">
+                        <span>🌎</span>
+                        <h3>Reduzir Carbono</h3>
+                        <p>Diminuir impactos ambientais.</p>
+                    </article>
+
+                    <article class="mission-card">
+                        <span>💰</span>
+                        <h3>Manter o Lucro</h3>
+                        <p>Garantir sustentabilidade econômica.</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- TIMELINE -->
+        <!-- ========================= -->
+
+        <section id="timeline" class="section timeline-section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>
+                        Evolução da Agricultura
+                    </h2>
+
+                    <p>
+                        Conheça as transformações que mudaram o campo.
+                    </p>
+
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🌾</div>
+                        <h3>Agricultura Tradicional</h3>
+                        <p>Trabalho manual e baixa mecanização.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🚜</div>
+                        <h3>Revolução Verde</h3>
+                        <p>Chegada das máquinas agrícolas.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🛰️</div>
+                        <h3>Agricultura de Precisão</h3>
+                        <p>GPS e monitoramento do campo.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🤖</div>
+                        <h3>Agricultura 4.0</h3>
+                        <p>IA, sensores e automação.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🌱</div>
+                        <h3>Agricultura Regenerativa</h3>
+                        <p>Produção e recuperação ambiental.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- LABORATÓRIO -->
+        <!-- ========================= -->
+
+        <section id="laboratorio" class="section laboratorio">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>
+                        Laboratório AgroTech
+                    </h2>
+
+                    <p>
+                        Ajuste os recursos da fazenda e acompanhe os resultados.
+                    </p>
+
+                </div>
+
+                <div class="simulator">
+
+                    <div class="controls">
+
+                        <div class="control-group">
+                            <label>Uso de Água</label>
+                            <input type="range" id="agua" min="0" max="100" value="50">
+                        </div>
+
+                        <div class="control-group">
+                            <label>Fertilizantes</label>
+                            <input type="range" id="fertilizante" min="0" max="100" value="50">
+                        </div>
+
+                        <div class="control-group">
+                            <label>Drones</label>
+                            <input type="range" id="drones" min="0" max="100" value="50">
+                        </div>
+
+                        <div class="control-group">
+                            <label>Sensores</label>
+                            <input type="range" id="sensores" min="0" max="100" value="50">
+                        </div>
+
+                        <div class="control-group">
+                            <label>Energia Solar</label>
+                            <input type="range" id="solar" min="0" max="100" value="50">
+                        </div>
+
+                    </div>
+
+                    <div class="results">
+
+                        <div class="result-card">
+                            <h3>🌾 Produção</h3>
+                            <span id="producaoValor">50%</span>
+                        </div>
+
+                        <div class="result-card">
+                            <h3>💧 Água</h3>
+                            <span id="aguaValor">50%</span>
+                        </div>
+
+                        <div class="result-card">
+                            <h3>🌎 Carbono</h3>
+                            <span id="carbonoValor">50%</span>
+                        </div>
+
+                        <div class="result-card">
+                            <h3>💰 Lucro</h3>
+                            <span id="lucroValor">50%</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- DASHBOARD -->
+        <!-- ========================= -->
+
+        <section class="section dashboard">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>
+                        Dashboard Sustentável
+                    </h2>
+
+                    <p>
+                        Observe os impactos das suas decisões.
+                    </p>
+
+                </div>
+
+                <div class="charts-grid">
+
+                    <div class="chart-card">
+                        <canvas id="graficoProducao"></canvas>
+                    </div>
+
+                    <div class="chart-card">
+                        <canvas id="graficoSustentabilidade"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- COMPARADOR -->
+        <!-- ========================= -->
+
+        <section id="comparador" class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>
+                        Agricultura Tradicional × Agricultura 4.0
+                    </h2>
+
+                </div>
+
+                <div class="comparison-table">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Indicador</th>
+                                <th>Tradicional</th>
+                                <th>4.0</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Consumo de Água</td>
+                                <td>Alto</td>
+                                <td>Baixo</td>
+                            </tr>
+
+                            <tr>
+                                <td>Carbono</td>
+                                <td>Alto</td>
+                                <td>Reduzido</td>
+                            </tr>
+
+                            <tr>
+                                <td>Precisão</td>
+                                <td>Média</td>
+                                <td>Alta</td>
+                            </tr>
+
+                            <tr>
+                                <td>Produtividade</td>
+                                <td>Média</td>
+                                <td>Elevada</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- QUIZ E CERTIFICADO -->
+        <!-- Continuação na Parte 2 -->
+<!-- ========================= -->
+<!-- GALERIA DE SOLUÇÕES -->
+<!-- ========================= -->
+
+<section class="section solutions-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Soluções para um Futuro Sustentável
+            </h2>
+
+            <p>
+                Conheça tecnologias que estão revolucionando o campo.
+            </p>
+
+        </div>
+
+        <div class="solutions-grid">
+
+            <article class="solution-card">
+                <img src="sensor.png" alt="Sensores inteligentes monitorando o solo">
+                <h3>📡 Sensores Inteligentes</h3>
+                <p>Monitoram umidade, nutrientes e condições do solo em tempo real.</p>
+            </article>
+
+            <article class="solution-card">
+                <img src="dr.png" alt="Drone agrícola sobrevoando uma lavoura">
+                <h3>🚁 Drones Agrícolas</h3>
+                <p>Detectam pragas, doenças e falhas de plantio rapidamente.</p>
+            </article>
+
+            <article class="solution-card">
+                <img src="trator.png" alt="Trator autônomo em plantação">
+                <h3>🚜 Tratores Autônomos</h3>
+                <p>Executam operações com alta precisão e menor consumo de combustível.</p>
+            </article>
+
+            <article class="solution-card">
+                <img src="solar.png" alt="Painéis solares em propriedade rural">
+                <h3>☀️ Energia Solar Rural</h3>
+                <p>Reduz custos e diminui a dependência de fontes poluentes.</p>
+            </article>
+
+            <article class="solution-card">
+                <img src="bioinsumo.png" alt="Aplicação de bioinsumos na agricultura">
+                <h3>🌱 Bioinsumos</h3>
+                <p>Alternativas biológicas que reduzem o uso de produtos químicos.</p>
+            </article>
+
+            <article class="solution-card">
+                <img src="rege.png" alt="Solo fértil e agricultura regenerativa">
+                <h3>🌎 Agricultura Regenerativa</h3>
+                <p>Produz alimentos enquanto recupera os recursos naturais.</p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MAPA INTERATIVO -->
+<!-- ========================= -->
+
+<section class="section map-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Agricultura Sustentável pelo Brasil
+            </h2>
+
+            <p>
+                Clique em uma região para descobrir exemplos de inovação agrícola.
+            </p>
+
+        </div>
+
+        <div class="map-container">
+
+            <div class="map-buttons">
+
+                <button class="region-btn" data-region="sul">
+                    Sul
+                </button>
+
+                <button class="region-btn" data-region="sudeste">
+                    Sudeste
+                </button>
+
+                <button class="region-btn" data-region="centro">
+                    Centro-Oeste
+                </button>
+
+                <button class="region-btn" data-region="norte">
+                    Norte
+                </button>
+
+                <button class="region-btn" data-region="nordeste">
+                    Nordeste
+                </button>
+
+            </div>
+
+            <div id="regionInfo" class="region-info">
+
+                <h3>
+                    🌎 Explore o Brasil Sustentável
+                </h3>
+
+                <p>
+                    Selecione uma região para conhecer exemplos de agricultura sustentável.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- QUIZ GAMIFICADO -->
+<!-- ========================= -->
+
+<section id="quiz" class="section quiz-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Quiz AgroTech
+            </h2>
+
+            <p>
+                Teste seus conhecimentos sobre Agricultura 4.0.
+            </p>
+
+        </div>
+
+        <div class="quiz-container">
+
+            <div id="quizBox">
+
+                <h3 id="question">
+                    Carregando pergunta...
+                </h3>
+
+                <div id="answers" class="answers">
+                </div>
+
+                <button id="nextQuestion" class="btn btn-primary">
+                    Próxima Pergunta
+                </button>
+
+            </div>
+
+            <div class="quiz-score">
+
+                <h3>
+                    Pontuação
+                </h3>
+
+                <div id="score">
+                    0
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONQUISTAS -->
+<!-- ========================= -->
+
+<section class="section achievements-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Conquistas Desbloqueadas
+            </h2>
+
+            <p>
+                Suas ações no site geram recompensas educativas.
+            </p>
+
+        </div>
+
+        <div class="achievements-grid">
+
+            <div class="achievement-card" id="achievement1">
+                🌱
+                <h3>Aprendiz Verde</h3>
+                <p>Responder a primeira pergunta corretamente.</p>
+            </div>
+
+            <div class="achievement-card" id="achievement2">
+                🚜
+                <h3>Gestor Rural</h3>
+                <p>Equilibrar os indicadores do simulador.</p>
+            </div>
+
+            <div class="achievement-card" id="achievement3">
+                🤖
+                <h3>Especialista AgroTech</h3>
+                <p>Concluir o quiz com excelente desempenho.</p>
+            </div>
+
+            <div class="achievement-card" id="achievement4">
+                🏅
+                <h3>Guardião da Sustentabilidade</h3>
+                <p>Finalizar toda a jornada de aprendizagem.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- DESAFIO FINAL -->
+<!-- ========================= -->
+
+<section class="section challenge-section">
+
+    <div class="container">
+
+        <div class="challenge-box">
+
+            <h2>
+                Desafio Final
+            </h2>
+
+            <p>
+
+                Sua missão é alcançar:
+
+            </p>
+
+            <ul>
+
+                <li>🌾 Produção acima de 80%</li>
+
+                <li>💧 Consumo de água abaixo de 40%</li>
+
+                <li>🌎 Carbono abaixo de 30%</li>
+
+                <li>💰 Lucro acima de 70%</li>
+
+            </ul>
+
+            <button id="checkChallenge" class="btn btn-primary">
+                Verificar Desafio
+            </button>
+
+            <div id="challengeResult">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CERTIFICADO -->
+<!-- ========================= -->
+
+<section class="section certificate-section">
+
+    <div class="container">
+
+        <div class="certificate-card">
+
+            <h2>
+                Certificado de Conclusão
+            </h2>
+
+            <p>
+
+                Ao concluir sua jornada você poderá gerar
+                um certificado personalizado.
+
+            </p>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Digite seu nome">
+
+            <button id="generateCertificate"
+                class="btn btn-primary">
+
+                Gerar Certificado
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- REFLEXÃO FINAL -->
+<!-- ========================= -->
+
+<section class="section reflection-section">
+
+    <div class="container">
+
+        <div class="reflection-content">
+
+            <h2>
+                O Futuro Está em Suas Mãos
+            </h2>
+
+            <p>
+
+                A agricultura sustentável depende da união entre
+                conhecimento, tecnologia e responsabilidade ambiental.
+
+                Cada escolha feita hoje ajudará a construir
+                um planeta mais equilibrado para as próximas gerações.
+
+            </p>
+
+            <a href="#missao" class="btn btn-secondary">
+
+                Reiniciar Jornada
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- RODAPÉ PREMIUM -->
+<!-- ========================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+                Agro Forte, Futuro Sustentável
+            </h3>
+
+            <p>
+
+                Autoria: Weslley Rafael Candido Machado
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>
+                Áreas do Site
+            </h3>
+
+            <ul>
+
+                <li>Missão</li>
+                <li>Laboratório</li>
+                <li>Quiz</li>
+                <li>Desafio Final</li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>
+                Competências Desenvolvidas
+            </h3>
+
+            <ul>
+
+                <li>Pensamento crítico</li>
+                <li>Sustentabilidade</li>
+                <li>Tecnologia</li>
+                <li>Tomada de decisão</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 • Plataforma Educacional Interativa • Agro Forte, Futuro Sustentável
+
+    </div>
+
+</footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
